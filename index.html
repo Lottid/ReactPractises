@@ -6,38 +6,10 @@
     <script src="build/react.js"></script>
     <script src="build/JSXTransformer.js"></script>
     <script src="build/howler.min.js"></script>
+    <script type="text/jsx" src="component/musicList.js"></script>
   </head>
   <body>
     <div id="example"></div>
-    <script type="text/jsx">
-      var sound = new Howl({
-        urls: ['./music/translate_tts.mp3']
-      }).play();
 
-      //Interactive
-      var InteractiveWidget = React.createClass({
-        getInitialState: function(){
-          return ({
-            liked: false
-          });
-        },
-        toggleLike: function(){
-          this.setState({liked: !this.state.liked});
-        },
-        render: function(){
-          var text = this.state.liked? "Like":"Dislike";
-          return(
-            <p onClick={this.toggleLike}>
-              You {text} it, click here to toggle.
-            </p>
-          );
-        }
-      });
-
-      React.render(
-        <InteractiveWidget />,
-        document.getElementById('example')
-      );
-    </script>
   </body>
 </html>
