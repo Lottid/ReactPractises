@@ -1,10 +1,6 @@
 /**
  * Created by David on 8/23/15.
  */
-var sound = new Howl({
-    urls: ['./music/javascript.mp3']
-}).play();
-
 var soundDataList = [
     {
         sound: new Howl({
