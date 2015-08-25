@@ -39,8 +39,3 @@ var MusicList = React.createClass({
         );
     }
 });
-
-React.render(
-    <MusicList data={soundDataList}/>,
-    document.getElementById('example')
-);

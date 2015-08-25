@@ -1,5 +1,5 @@
 guard 'livereload' do
-  watch('index.html')
+  watch(%r{\.(html)})
   watch(%r{stylesheets/.+\.(css)})
-  watch(%r{scripts/.+\.(js)})
+  watch(%r{component/.+\.(js)})
 end
